@@ -1,0 +1,16 @@
+<div class="wrapper">
+  <div class="row content_area">
+    <div class="col-2 left_submenu">
+      <ul>
+        <li [class]='dashboard' (click)="setActiveClass('dashboard')"><a [routerLink]="['/dashboard']"><img src="../../../assets/images/dashboard.png" class="mx-auto d-block"></a></li>
+        <li [class]= 'node' (click)="setActiveClass('node')"><a [routerLink]="['/nodes']"><img src="../../../assets/images/node.png" class="mx-auto d-block"></a></li>
+        <li [class]= 'organization' (click)="setActiveClass('organization')"><a [routerLink]="['/organizations']"><img src="../../../assets/images/organization.png" class="mx-auto d-block"></a></li>
+        <li [class]= 'channel' (click)="setActiveClass('channel')"><a [routerLink]="['/channels']"><img src="../../../assets/images/channel.png" class="mx-auto d-block"></a></li>
+        <li [class]= 'contract' (click)="setActiveClass('contract')"><a [routerLink]="['/smartcontracts']"><img src="../../../assets/images/contract.png" class="mx-auto d-block"></a></li>
+      </ul>
+    </div>
+    <div class="col-10 right_content_block">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,82 @@
+ul,
+li,
+a,
+h1,
+h2,
+h3,
+p {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+.wrapper {
+  background: #eceff3;
+}
+
+.left_submenu {
+  background: aliceblue;
+  display: table-cell;
+  padding: 0px;
+  float: none;
+}
+
+.left_submenu h1 {
+  font-size: 24px;
+  color: #ffffff;
+  padding: 20px 30px;
+}
+
+.left_submenu ul li {
+  display: block;
+  padding: 0 20px 0px 20px;
+  border-left: 10px solid #0033a0;
+  border-bottom: 2px solid #0033a0;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.left_submenu ul li:hover,
+.left_submenu ul li.active_item {
+  background: white;
+  border-left: 10px solid #00b140;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.left_submenu ul li a {
+  font-size: 14px;
+  color: #e4e4e4;
+  display: block;
+  padding: 20px 0px;
+  margin-bottom: 1px;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.left_submenu ul li a:hover,
+.left_submenu ul li.active_item a {
+  text-decoration: none;
+  background: url(../../../assets/images/arrow_left_menu.png) no-repeat right center;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.right_content_block {
+  padding: 30px 30px 30px 30px;
+  display: table-cell;
+  float: none;
+}
+
+img {
+  width: 70px;
+  height: 70px;
+}

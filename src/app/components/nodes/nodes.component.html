@@ -1,0 +1,99 @@
+<h2>Available Peers</h2><img src="../../../assets/images/tooltip.png" />
+<div class="row successbox">
+  <div class="col-3 green">
+    <h3>Success</h3>
+    <p>Peer was created successfully !</p>
+  </div>
+  <div class="col-3 blue">
+    <p>Click on <b>Add Peer</b> to add new peer to the network !</p>
+    <input type="button" value="Add Peer" (click)="peerInfo()">
+  </div>
+</div>
+<br>
+<h2>Available Certificate Authorities</h2><img src="../../../assets/images/tooltip.png" />
+<div class="row successbox">
+  <div class="col-3 green">
+    <h3>Success</h3>
+    <p>Certificate Authority was created successfully !</p>
+  </div>
+  <div class="col-3 blue">
+    <p>Click on <b>Add Certificate Authority</b> to add new certificate authority to the network !</p>
+    <input type="button" value="Add Certificate Authority" (click)="caInfo()">
+  </div>
+</div>
+<br>
+<h2>Available Orderers</h2><img src="../../../assets/images/tooltip.png" />
+<div class="row successbox">
+  <div class="col-3 green">
+    <h3>Success</h3>
+    <p>Orderer was created successfully !</p>
+  </div>
+  <div class="col-3 blue">
+    <p>Click on <b>Add Orderer</b> to add an orderer to the network !</p>
+    <input type="button" value="Add Orderer" (click)="ordererInfo()">
+  </div>
+</div>
+
+
+<!-- The CA Modal -->
+<div class="modal fade" id="caModal" [style.display]="showCAModal ? 'block' : 'none'">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h4 class="modal-title">Certificate Authority</h4>
+      </div>
+
+      <div class="modal-body">
+        Modal body..
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" (click)="closeCAModal()">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- The Orderer Modal -->
+<div class="modal fade" id="ordererModal" [style.display]="showOrdererModal ? 'block' : 'none'">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h4 class="modal-title">Orderer</h4>
+      </div>
+
+      <div class="modal-body">
+        Modal body..
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" (click)="closeOrdererModal()">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- The Peer Modal -->
+<div class="modal fade" id="peerModal" [style.display]="showPeerModal ? 'block' : 'none'">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h4 class="modal-title">Peer</h4>
+      </div>
+
+      <div class="modal-body">
+        Modal body..
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" (click)="closePeerModal()">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
