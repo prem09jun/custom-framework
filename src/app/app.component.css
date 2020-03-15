@@ -1,0 +1,51 @@
+.header_bg{
+	background: url(../assets/images/header_repeat.png) repeat-x center top #fff;
+	min-height: 111px;
+	width: 100%;
+	position:relative;
+}
+.header_left, .header_right{
+	position:absolute;
+	top:0px;
+}
+.header_left{
+	background:url(../assets/images/left_header.png) no-repeat left top;
+	min-height: 111px;
+	width:45%;
+	left:0px;
+	z-index: 99;
+}
+.header_right{
+	background: url(../assets/images/right_header.png) no-repeat right top;
+	min-height: 111px;
+	width:45%;
+	right:0px;
+	z-index: 99;
+}
+.logo_pharma{
+	min-height: 46px;
+	position: relative;
+	z-index: 9999;
+	margin-top: 30px;
+	float:left;
+}
+.banner_text_right{
+	float: right;
+	margin: 30px 0 0 100px;
+	position: relative;
+	z-index: 9999;
+	color: #fff;
+	font-family:'tt_norms_bold';
+	font-size: 18px;
+}
+.banner_text_right b{
+	color: #00b140;
+}
+.footer{
+	font-size: 16px;
+	color:#999999;
+	text-align: center;
+	padding: 10px 0;
+	border-top: 3px solid #00b140;
+	letter-spacing: 2px;
+}
